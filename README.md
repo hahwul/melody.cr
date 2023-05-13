@@ -1,0 +1,2 @@
+# melody.cr
+My logger
