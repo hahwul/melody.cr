@@ -1,2 +1,39 @@
-# melody.cr
-My logger
+# melody
+
+TODO: Write a description here
+
+## Installation
+
+1. Add the dependency to your `shard.yml`:
+
+   ```yaml
+   dependencies:
+     melody:
+       github: your-github-user/melody
+   ```
+
+2. Run `shards install`
+
+## Usage
+
+```crystal
+require "melody"
+```
+
+TODO: Write usage instructions here
+
+## Development
+
+TODO: Write development instructions here
+
+## Contributing
+
+1. Fork it (<https://github.com/your-github-user/melody/fork>)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+## Contributors
+
+- [hahwul](https://github.com/your-github-user) - creator and maintainer
