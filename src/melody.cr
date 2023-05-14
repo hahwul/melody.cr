@@ -13,23 +13,28 @@ module Melody
     end
     
     def get_icon(severity)
-      case severity
-      when :debug
-        string "🐛"
-      when :info
-        string "🎵"
-      when :warn
-        string "⚠️"
-      when :error
-        string "🚨"
-      when :fatal
-        string "💀"
+      if severity.to_s.includes? "DEBUG"
+        string "[D]"
+      elsif severity.to_s.includes? "INFO"
+        string "[I]"
+      elsif severity.to_s.includes? "WARN"
+        string "[W]"
+      elsif severity.to_s.includes? "ERROR"
+        string "[E]"
+      elsif severity.to_s.includes? "FATAL"
+        string "[F]"
+      else
+        string "[+]"
       end
     end
   end
 
   def set_debug
     Logger.setup(:debug)
+  end
+
+  def set_formatter(formatter)
+    Logger.setup(:info, Log::IOBackend.new(formatter: formatter))
   end
 end
 
