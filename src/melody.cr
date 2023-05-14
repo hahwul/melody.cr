@@ -1,13 +1,12 @@
-require "logger"
+require "log"
 
 module Melody
   VERSION = "0.1.0"
 
-  class Melody
-    @logger = nil
-    
-    def initialize()
-      @logger = Logger.new(STDOUT)
+  class Logger
+    @logger : String
+    def initialize(logger)
+      @logger = logger
     end
   end
 end

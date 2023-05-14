@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      melody:
-       github: your-github-user/melody
+       github: hahwul/melody.cr
    ```
 
 2. Run `shards install`
@@ -36,4 +36,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [hahwul](https://github.com/your-github-user) - creator and maintainer
+- [hahwul](https://github.com/hahwul) - creator and maintainer
